@@ -159,11 +159,13 @@ Get your balance, member status and prices.
 }
 ```
 
+---
+
 # Common Errors
 ### `400` Bad Request
-| Reason | Description |
-| ------ | ----------- |
-| BAD_APIKEY | API key is wrong or empty |
+| Reason | Description | Methods |
+| ------ | ----------- | ------- |
+| BAD_APIKEY | API key is wrong or empty | `create_task`, `get_info` |
 
 ### `500` Internal Server Error
 ```
