@@ -1,6 +1,10 @@
 # Api domain: `https://approveme.cc`
 
----
+**Table of contents**
+- [Endpoint: **create_task**](#post-api10create_taskapikeyapikey)
+- [Endpoint: **get_status**](#get-api10get_statusidid)
+- [Endpoint: **get_info**](#get-api10get_infoapikeyapikey)
+- [Common Errors](#common-errors)
 
 # `POST` /api/1.0/create_task?apikey=`<apikey>`
 **Content-type: `multipart/form-data`**
