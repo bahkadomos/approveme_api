@@ -132,6 +132,8 @@ Get status of created task.
 | ------ | ----------- |
 | EMPTY_ID | ID is empty |
 
+---
+
 # `GET` /api/1.0/get_info?apikey=`<apikey>`
 Get your balance, member status and prices.
 
