@@ -30,6 +30,7 @@ Create a task to generate document. Some parameters are not required. If the par
 | `sex` | string | true | `male` or `female`. |
 | `name` | string | false * | First name (only letters). |
 | `surname` | string | false * | Last name (only letters). |
+| `birth` | string | false * | Birhday (DD.MM.YYYY). |
 | `file` | binary | false * | Photo in bytes. See table of available sizes. |
 
 \* Not required params can be `null` or you can choose not to pass them.
