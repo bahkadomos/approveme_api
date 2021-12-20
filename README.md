@@ -40,6 +40,7 @@ Create a task to generate document. Some parameters are not required. If the par
 | `file` | binary | false \* | Photo in bytes. You should send a photo of **192x256** or larger. |
 
 \* Not required params can be `null` or you can choose not to pass them.
+
 \*\* You should set `remove_bg` to `true` only if the photo has a background.
 
 **List of countries:**
