@@ -184,7 +184,7 @@ Get account's balance, member status, discount (percent) and prices.
 Methods: `create_task`, `get_info`.
 ```
 {
-    'message': {
+    "message": {
         "status": false,
         "code": 500,
         "reason": "BAD_APIKEY",
@@ -196,7 +196,7 @@ Methods: `create_task`, `get_info`.
 ### `500` Internal Server Error
 ```
 {
-    'message': {
+    "message": {
         "status": false,
         "code": 500,
         "reason": "UNKNOWN_ERROR",
@@ -206,4 +206,14 @@ Methods: `create_task`, `get_info`.
 ```
 
 ### `429` Too Many Requests
+```
+{
+    "message": {
+		"status": false,
+		"code": 429,
+		"reason": "REQUESTS_LIMIT",
+		"description": "Number of allowed requests exceeded"
+    }
+}
+```
 All API requests are limited to `2 per second` and `120 per minute`. If you see this status code, you need to increase delays between requests. You can get more info in following response headers: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Reset` and `Retry-After`.
