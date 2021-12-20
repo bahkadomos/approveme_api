@@ -34,10 +34,14 @@ Create a task to generate document. Some parameters are not required. If the par
 | `sex` | string | true | `male` or `female`. |
 | `name` | string | false \* | First name (only letters). |
 | `surname` | string | false \* | Last name (only letters). |
-| `patronymic` | string | false \* | Second name (only letters). Available in some countries (see list of countries). |
 | `birth` | string | false \* | Birthday (DD.MM.YYYY). |
 | `remove_bg` \*\* | boolean | false \* | **true** - remove background of photo, else - not. Default **true**. |
 | `file` | binary | false \* | Photo in bytes. You should send a photo of **192x256** or larger. |
+
+**Extra params available for some countries (see list of countries)**
+| Name | Type | Required | Description |
+| ---- | ---- | -------- | ----------- |
+| `patronymic` | string | false \* | Second name (only letters). |
 
 \* Not required params can be `null` or you can choose not to pass them.
 
