@@ -103,6 +103,8 @@ Create a task to generate document. Some parameters are not required. If the par
 # `GET` /api/1.0/get_status?id=`<id>`
 Get status of created task.
 
+**Attention**: you have 20 minutes to get the result of the task. After that, the task will be deleted.
+
 ## Request
 **Url params:**
 | Name | Type | Required | Description |
