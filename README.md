@@ -19,6 +19,7 @@ Create a task to generate document. Some parameters are not required. If the par
     "sex": <string>,
     "name": <string>,
     "surname": <string>,
+    "patronymic": <string>,
     "birth": <string>,
     "remove_bg": <boolean>,
     "file": <binary>
@@ -33,6 +34,7 @@ Create a task to generate document. Some parameters are not required. If the par
 | `sex` | string | true | `male` or `female`. |
 | `name` | string | false * | First name (only letters). |
 | `surname` | string | false * | Last name (only letters). |
+| `patronymic` | string | false * | Second name (only letters). Available in some countries (see list of countries). |
 | `birth` | string | false * | Birthday (DD.MM.YYYY). |
 | `remove_bg` | boolean | false * | **true** - remove background of photo, else - not. Default **true**. |
 | `file` | binary | false * | Photo in bytes. You should send a photo of **192x256** or larger. |
@@ -40,10 +42,10 @@ Create a task to generate document. Some parameters are not required. If the par
 \* Not required params can be `null` or you can choose not to pass them.
 
 **List of countries:**
-| Country | Mode | Country Description |
-| ------- | ---- | ------------------- |
-| `ru` | `passport` | Russia |
-| `ua` | `id` | Ukraine |
+| Country | Country Description | Modes | Available params |
+| ------- | ------------------- | ----- | ---------------- |
+| `ru` | Russia | `passport` | `patronymic` |
+| `ua` | Ukraine | `id` | `patronymic` |
 
 ## Response
 ### `201` Created
