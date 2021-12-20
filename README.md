@@ -94,7 +94,7 @@ Create a task to generate document. Some parameters are not required. If the par
 | EMPTY_SEX | Sex must not be empty |
 | BAD_SEX | Sex must be "male" or "female" |
 | BAD_IMAGE | File has not recognized as image |
-| BAD_SIZE | Width and height of the image must be \<width>x\<height> or more |
+| BAD_SIZE | Width and height of the image must be 192x256 or more |
 | BAD_BALANCE | Not enough money on the account |
 
 ---
