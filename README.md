@@ -117,7 +117,7 @@ Get status of created task.
 {
     "message": {
         {
-            "id": <integer>,
+            "id": <string>,
             "status": true,
             "code": 200,
             "done": <boolean>,
