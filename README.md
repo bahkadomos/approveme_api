@@ -83,6 +83,8 @@ Create a task to generate document. Some parameters are not required. If the par
 | ------ | ----------- |
 | EMPTY_COUNTRY | Country is empty |
 | BAD_COUNTRY | Country not found |
+| EMPTY_MODE | Mode is empty. You should pass "id" or "passport" |
+| BAD_MODE | Mode not found. You should pass "id" or "passport" |
 | BAD_BIRTH | Date format must be: DD.MM.YYYY |
 | EMPTY_SEX | Sex must not be empty |
 | BAD_SEX | Sex must be "male" or "female" |
