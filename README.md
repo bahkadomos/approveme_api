@@ -32,14 +32,15 @@ Create a task to generate document. Some parameters are not required. If the par
 | `country` | string | true | See list of countries. |
 | `mode` | string | true | **id**, **passport**. See list of countries. |
 | `sex` | string | true | `male` or `female`. |
-| `name` | string | false * | First name (only letters). |
-| `surname` | string | false * | Last name (only letters). |
-| `patronymic` | string | false * | Second name (only letters). Available in some countries (see list of countries). |
-| `birth` | string | false * | Birthday (DD.MM.YYYY). |
-| `remove_bg` | boolean | false * | **true** - remove background of photo, else - not. Default **true**. |
-| `file` | binary | false * | Photo in bytes. You should send a photo of **192x256** or larger. |
+| `name` | string | false \* | First name (only letters). |
+| `surname` | string | false \* | Last name (only letters). |
+| `patronymic` | string | false \* | Second name (only letters). Available in some countries (see list of countries). |
+| `birth` | string | false \* | Birthday (DD.MM.YYYY). |
+| `remove_bg` \*\* | boolean | false \* | **true** - remove background of photo, else - not. Default **true**. |
+| `file` | binary | false \* | Photo in bytes. You should send a photo of **192x256** or larger. |
 
 \* Not required params can be `null` or you can choose not to pass them.
+\*\* You should set `remove_bg` to `true` only if the photo has a background.
 
 **List of countries:**
 | Country | Country Description | Modes | Available params |
@@ -89,7 +90,7 @@ Create a task to generate document. Some parameters are not required. If the par
 | EMPTY_SEX | Sex must not be empty |
 | BAD_SEX | Sex must be "male" or "female" |
 | BAD_IMAGE | File has not recognized as image |
-| BAD_SIZE | Width and height of the image must be <width>x<height> or more |
+| BAD_SIZE | Width and height of the image must be \<width>x\<height> or more |
 | BAD_BALANCE | Not enough money on the account |
 
 ---
