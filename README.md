@@ -15,6 +15,7 @@ Create a task to generate document. Some parameters are not required. If the par
 ```
 {
     "country": <string>,
+    "mode": <string>,
     "sex": <string>,
     "name": <string>,
     "surname": <string>,
