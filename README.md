@@ -1,8 +1,7 @@
 # Api domain: `https://approveme.cc`
-
 **Table of contents**
 - [Method **create_task**](#post-api10create_taskapikeyapikey)
-- [Method **get_status**](#get-api10get_statusidid)
+- [Method **get_status**](#get-api10get_statusidcreate_taskid)
 - [Method **get_info**](#get-api10get_infoapikeyapikey)
 - [Common Errors](#common-errors)
 
