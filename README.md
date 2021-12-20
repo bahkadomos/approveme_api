@@ -217,3 +217,13 @@ Methods: `create_task`, `get_info`.
 }
 ```
 All API requests are limited to `2 per second` and `120 per minute`. If you see this status code, you need to increase delays between requests. You can get more info in following response headers: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Reset` and `Retry-After`.
+
+### Unexpected Errors
+```
+{
+    "message": {
+    	"status": false,
+	"code": <integer>
+    }
+}
+```
