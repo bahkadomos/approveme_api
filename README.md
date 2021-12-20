@@ -47,7 +47,7 @@ Create a task to generate document. Some parameters are not required. If the par
 \*\* You should set `remove_bg` to `true` only if the photo has a background.
 
 **List of countries**
-| Country | Country Description | Modes | Extra Parameters |
+| Country | Country Description | Modes | Extra Params |
 | ------- | ------------------- | ----- | ---------------- |
 | `ru` | Russia | `passport` | `patronymic` |
 | `ua` | Ukraine | `id` | `patronymic` |
