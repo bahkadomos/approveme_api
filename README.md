@@ -30,7 +30,7 @@ Create a task to generate document. Some parameters are not required. If the par
 | Name | Type | Required | Description |
 | ---- | ---- | -------- | ----------- |
 | `country` | string | true | See list of countries. |
-| `mode` | string | true | **id**, **passport**. See list of countries. |
+| `mode` | string | true | `id`, `passport`. See list of countries. |
 | `sex` | string | true | `male` or `female`. |
 | `name` | string | false \* | First name (only letters). |
 | `surname` | string | false \* | Last name (only letters). |
