@@ -162,11 +162,17 @@ Get your balance, member status and prices.
         "status": true,
         "code": 200,
         "balance": <float>,
-        "member": <integer>,
+        "member": <string>,
+        "discount": <integer (percents)>,
         "prices": {
-            "ru": <float>,
-            "ua": <float>,
-            -------------
+            "id": {
+                "ua": <float>,
+                -------------
+            },
+            "passport": {
+                "ru": <float>,
+                -------------
+            }
         }
     }
 }
