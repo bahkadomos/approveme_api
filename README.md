@@ -180,7 +180,7 @@ Get account's balance, member status, discount (percent) and prices.
 ---
 
 # Common Errors
-### `400` Bad Request
+### `401` Unauthorized Error
 Methods: `create_task`, `get_info`.
 ```
 {
