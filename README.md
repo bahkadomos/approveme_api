@@ -209,10 +209,10 @@ Methods: `create_task`, `get_info`.
 ```
 {
     "message": {
-		"status": false,
-		"code": 429,
-		"reason": "REQUESTS_LIMIT",
-		"description": "Number of allowed requests exceeded"
+	"status": false,
+	"code": 429,
+	"reason": "REQUESTS_LIMIT",
+	"description": "Number of allowed requests exceeded"
     }
 }
 ```
