@@ -152,7 +152,7 @@ Get status of created task.
 ---
 
 # `GET` /api/1.0/get_info?apikey=`<apikey>`
-Get your balance, member status and prices.
+Get account's balance, member status, discount (percent) and prices.
 
 ## Response
 ### `200` OK
@@ -163,7 +163,7 @@ Get your balance, member status and prices.
         "code": 200,
         "balance": <float>,
         "member": <string>,
-        "discount": <integer (percents)>,
+        "discount": <integer>,
         "prices": {
             "id": {
                 "ua": <float>,
