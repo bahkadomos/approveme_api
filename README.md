@@ -26,7 +26,7 @@ Create a task to generate document. Some parameters are not required. If the par
 **Body params description**
 | Name | Type | Required | Description |
 | ---- | ---- | -------- | ----------- |
-| `country` | string | true | 2-letters country code. See list of countries. |
+| `country` | string | true | See list of countries. |
 | `sex` | string | true | `male` or `female`. |
 | `name` | string | false * | First name (only letters). |
 | `surname` | string | false * | Last name (only letters). |
