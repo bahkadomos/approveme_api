@@ -43,7 +43,7 @@ Create a task to generate document. Some parameters are not required. If the par
 | Country code | Minimum size |
 | ------------ | ------------ |
 | `ru` | 192x192 |
-| `ua` | 192x192 |
+| `ua` | 192x256 |
 
 ## Response
 ### `201` Created
