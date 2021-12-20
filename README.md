@@ -52,7 +52,7 @@ Create a task to generate document. Some parameters are not required. If the par
 ```
 {
     "message": {
-        "id": <integer>,
+        "id": <string>,
         "status": true,
         "code": 201,
         "data": {
@@ -101,7 +101,7 @@ Get status of created task.
 **Url params:**
 | Name | Type | Required | Description |
 | ---- | ---- | -------- | ----------- |
-| `id` | integer | true | `id` from response of the `create_task` method |
+| `id` | string | true | `id` from response of the `create_task` method |
 
 ## Response
 ### `200` OK
