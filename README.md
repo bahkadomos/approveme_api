@@ -31,19 +31,13 @@ Create a task to generate document. Some parameters are not required. If the par
 | `name` | string | false * | First name (only letters). |
 | `surname` | string | false * | Last name (only letters). |
 | `birth` | string | false * | Birthday (DD.MM.YYYY). |
-| `file` | binary | false * | Photo in bytes. See table of available sizes. |
+| `file` | binary | false * | Photo in bytes. You should send a photo of **192x256** or larger. |
 
 \* Not required params can be `null` or you can choose not to pass them.
 
 **List of countries:**
 * `ru` - Russia;
 * `ua` - Ukraine.
-
-**Photo sizes:**
-| Country code | Minimum size |
-| ------------ | ------------ |
-| `ru` | 192x192 |
-| `ua` | 192x256 |
 
 ## Response
 ### `201` Created
