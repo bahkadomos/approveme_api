@@ -1,4 +1,4 @@
-# Api domain: `https://approveme.cc`
+# API domain: `https://approveme.cc`
 **Table of contents**
 - [Method **create_task**](#post-api10create_taskapikeyapikey)
 - [Method **get_status**](#get-api10get_statusidcreate_taskid)
