@@ -182,6 +182,7 @@ Get account's balance, member status, discount (percent) and prices.
 
 # Common Errors
 ### `400` Bad Request
+Methods: `create_task`, `get_info`.
 ```
 {
     'message': {
@@ -192,7 +193,6 @@ Get account's balance, member status, discount (percent) and prices.
     }
 }
 ```
-Methods: `create_task`, `get_info`.
 
 ### `500` Internal Server Error
 ```
