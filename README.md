@@ -19,6 +19,7 @@ Create a task to generate document. Some parameters are not required. If the par
     "name": <string>,
     "surname": <string>,
     "birth": <string>,
+    "remove_bg": <boolean>,
     "file": <binary>
 }
 ```
