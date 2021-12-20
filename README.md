@@ -1,9 +1,9 @@
 # Api domain: `https://approveme.cc`
 
 **Table of contents**
-- [Endpoint: **create_task**](#post-api10create_taskapikeyapikey)
-- [Endpoint: **get_status**](#get-api10get_statusidid)
-- [Endpoint: **get_info**](#get-api10get_infoapikeyapikey)
+- [Method **create_task**](#post-api10create_taskapikeyapikey)
+- [Method **get_status**](#get-api10get_statusidid)
+- [Method **get_info**](#get-api10get_infoapikeyapikey)
 - [Common Errors](#common-errors)
 
 # `POST` /api/1.0/create_task?apikey=`<apikey>`
@@ -84,7 +84,7 @@ Create a task to generate document. Some parameters are not required. If the par
 }
 ```
 
-**Errors description:**
+**Errors description**
 | Reason | Description |
 | ------ | ----------- |
 | EMPTY_COUNTRY | Country is empty |
@@ -106,7 +106,7 @@ Get status of created task.
 **Attention**: you have 20 minutes to get the result of the task. After that, the task will be deleted.
 
 ## Request
-**Url params:**
+**Url params**
 | Name | Type | Required | Description |
 | ---- | ---- | -------- | ----------- |
 | `id` | string | true | `id` from response of the `create_task` method |
@@ -126,7 +126,7 @@ Get status of created task.
     }
 }
 ```
-**Response params description:**
+**Response params description**
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | `id` | integer | `id` from response of the `create_task` method |
@@ -144,7 +144,7 @@ Get status of created task.
     }
 }
 ```
-**Errors description:**
+**Errors description**
 | Reason | Description |
 | ------ | ----------- |
 | EMPTY_ID | ID is empty |
