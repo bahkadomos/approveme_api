@@ -27,17 +27,21 @@ Create a task to generate document. Some parameters are not required. If the par
 | Name | Type | Required | Description |
 | ---- | ---- | -------- | ----------- |
 | `country` | string | true | See list of countries. |
+| `mode` | string | true | **id**, **passport**. See list of countries. |
 | `sex` | string | true | `male` or `female`. |
 | `name` | string | false * | First name (only letters). |
 | `surname` | string | false * | Last name (only letters). |
 | `birth` | string | false * | Birthday (DD.MM.YYYY). |
+| `remove_bg` | boolean | false * | **true** - remove background of photo, else - not. Default **true**. |
 | `file` | binary | false * | Photo in bytes. You should send a photo of **192x256** or larger. |
 
 \* Not required params can be `null` or you can choose not to pass them.
 
 **List of countries:**
-* `ru` - Russia;
-* `ua` - Ukraine.
+| Country | Mode | Country Description |
+| ------- | ---- | ------------------- |
+| `ru` | `passport` | Russia |
+| `ua` | `id` | Ukraine |
 
 ## Response
 ### `201` Created
