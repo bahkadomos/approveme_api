@@ -35,7 +35,7 @@ Create a task to generate document. Some parameters are not required. If the par
 | `surname` | string | false \* | Last name (only letters). |
 | `birth` | string | false \* | Birthday (DD.MM.YYYY). |
 | `remove_bg` \*\* | boolean | false \* | `true` - remove background of photo, `false` - not remove. Default `true`. |
-| `file` | binary | false \* | Photo in bytes. You should send a photo of **192x256** or larger. |
+| `file` | binary | false \* | Photo in bytes. You should send a photo larger then minimum sizes and saving original ratio. See photo sizes. |
 
 **Extra params available for some countries (see list of countries)**
 | Name | Type | Required | Description |
@@ -44,13 +44,19 @@ Create a task to generate document. Some parameters are not required. If the par
 
 \* Not required params can be `null` or you can choose not to pass them.
 
-\*\* You should set `remove_bg` to `true` only if the photo has a background.
+\*\* You should set `remove_bg` to `false` only if you need to remove background. If the photo has a transparent background, then `true` can lead to the deletion of part of the original image!
 
 **List of countries**
 | Country | Country Description | Modes | Extra Params |
 | ------- | ------------------- | ----- | ---------------- |
 | `ru` | Russia | `passport` | `patronymic` |
 | `ua` | Ukraine | `id` | `patronymic` |
+
+**Photo sizes**
+| Country | Mode | Minimum Sizes | Ratio |
+| ------- | ---- | ----- | ----- |
+| `ru` | `passport` | 191x191 | 1x1 |
+| `ua` | `id` | 192x256 | 35x45 |
 
 ## Response
 ### `201` Created
