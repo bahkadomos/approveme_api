@@ -168,7 +168,10 @@ Get account's balance, member status, discount (percent) and prices.
     "message": {
         "status": true,
         "code": 200,
-        "balance": <float>,
+        "balance": {
+	    "main": <float>,
+	    "referral": <float>
+	},
         "member": <string>,
         "discount": <integer>,
         "prices": {
