@@ -137,7 +137,7 @@ Get status of created task.
 | ---- | ---- | ----------- |
 | `id` | integer | `id` from response of the `create_task` method |
 | `done` | boolean | `true` if document is ready; `false` if not ready yet |
-| `data` | JSON | The object contains the data to generate, which was passed in the `create_task` method. If the parameter was `null` or not passed, the value selected during generation will be returned. This object is returned only if `done` is `true`. |
+| `data` | JSON | The object contains the data to generate, which was passed in the `create_task` method. If the parameter was `null` or not passed, the value selected during generation will be returned. This object return `true` if `done` is `true`, else return `null`. |
 | `file` | base64 or null | Return base64 encoded image if `done` is `true`; else return `null` |
 
 ### `400` Bad Request
