@@ -95,12 +95,12 @@ Create a task to generate document. Some parameters are not required. If the par
 | EMPTY_COUNTRY | Country is empty |
 | BAD_COUNTRY | Country not found |
 | EMPTY_MODE | Mode is empty. You should pass "id" or "passport" |
-| BAD_MODE | Mode not found. You should pass one of the following params available for country "\<country>": \<mode1>, \<mode2> |
+| BAD_MODE | Mode not found. You should pass one of the following params available for country "\<country>": \<mode1>, \<mode2>... |
 | BAD_BIRTH | Date format must be: DD.MM.YYYY |
 | EMPTY_SEX | Sex must not be empty |
 | BAD_SEX | Sex must be "male" or "female" |
 | BAD_IMAGE | File has not recognized as image |
-| BAD_SIZE | Width and height of the image must be 192x256 or more |
+| BAD_SIZE | Width and height of the image must be \<width>x\<height> or more |
 | BAD_BALANCE | Not enough money on the account |
 
 ---
