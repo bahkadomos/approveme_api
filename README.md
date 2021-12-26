@@ -44,7 +44,7 @@ Create a task to generate document. Some parameters are not required. If the par
 
 \* Not required params can be `null` or you can choose not to pass them.
 
-\*\* You should set `remove_bg` to `false` only if you need to remove background. If the photo has a transparent background, then `true` can lead to the deletion of part of the original image!
+\*\* You should set `remove_bg` to `false` always if you don't need to remove background. If the photo has a transparent background, then `true` can lead to the deletion of part of the original image!
 
 **List of countries**
 | Country | Country Description | Modes | Extra Params |
