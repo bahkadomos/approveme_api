@@ -126,6 +126,7 @@ Get status of created task.
             "status": true,
             "code": 200,
             "done": <boolean>,
+	    "data": <JSON object>,
             "file": <base64>
         }
     }
@@ -136,7 +137,8 @@ Get status of created task.
 | ---- | ---- | ----------- |
 | `id` | integer | `id` from response of the `create_task` method |
 | `done` | boolean | `true` if document is ready; `false` if not ready yet |
-| `file` | base64 or null | Return base64 encoded image if `done` is `true`; else return `null`
+| `data` | JSON | The object contains the data to generate, which was passed in the `create_task` method. If the parameter was `null` or not passed, the value selected during generation will be returned. |
+| `file` | base64 or null | Return base64 encoded image if `done` is `true`; else return `null` |
 
 ### `400` Bad Request
 ```
